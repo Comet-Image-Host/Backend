@@ -129,7 +129,6 @@ def register():
                 token = secrets.token_hex(TOKEN_LENGTH)
                 secretkey = secrets.token_hex(8)
                 usersjson[username] = {
-                    'password': hashed_password.decode('utf-8'),  # Store the hashed password as a 
                     'email': email,
                     'token': token,
                     'KeysAvailable': '0',
